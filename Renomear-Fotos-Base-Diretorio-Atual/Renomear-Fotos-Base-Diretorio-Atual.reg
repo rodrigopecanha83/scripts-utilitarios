@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Clique no fundo da pasta (Background)
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\RenomearFotosBaseDiretorioAtual]
+@="Renomear Fotos Base Diretorio Atual"
+"Icon"="C:\\MenuContexto\\Renomear-Fotos-Base-Diretorio-Atual\\Icon.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\RenomearFotosBaseDiretorioAtual\command]
+@="\"C:\\MenuContexto\\Renomear-Fotos-Base-Diretorio-Atual\\Renomear-Fotos-Base-Diretorio-Atual.exe\" \"%V\""
+
+; Clique em cima da pasta
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\RenomearFotosBaseDiretorioAtual]
+@="Renomear Fotos Base Diretorio Atual"
+"Icon"="C:\\MenuContexto\\Renomear-Fotos-Base-Diretorio-Atual\\Icon.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\RenomearFotosBaseDiretorioAtual\command]
+@="\"C:\\MenuContexto\\Renomear-Fotos-Base-Diretorio-Atual\\Renomear-Fotos-Base-Diretorio-Atual.exe\" \"%1\""
