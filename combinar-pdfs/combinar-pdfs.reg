@@ -3,7 +3,7 @@ Windows Registry Editor Version 5.00
 ; Clique no fundo da pasta (Background)
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\CombinarPDFs]
 @="Combinar PDFs"
-"Icon"="C:\\MenuContexto\\combinar-pdfs\\Icon1.ico"
+"Icon"="C:\\MenuContexto\\combinar-pdfs\\Icon.ico"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\CombinarPDFs\command]
 @="\"C:\\MenuContexto\\combinar-pdfs\\combinar-pdfs.exe\" \"%V\""
@@ -11,7 +11,7 @@ Windows Registry Editor Version 5.00
 ; Clique em cima da pasta
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\CombinarPDFs]
 @="Combinar PDFs"
-"Icon"="C:\\MenuContexto\\combinar-pdfs\\Icon1.ico"
+"Icon"="C:\\MenuContexto\\combinar-pdfs\\Icon.ico"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\CombinarPDFs\command]
 @="\"C:\\MenuContexto\\combinar-pdfs\\combinar-pdfs.exe\" \"%1\""
