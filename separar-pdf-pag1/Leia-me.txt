@@ -1,0 +1,42 @@
+================================
+EXTRAIR APENAS A 1ª PÁGINA DO PDF
+================================
+Versão: 1.0
+Data: 3 de Agosto de 2026
+
+
+DESCRIÇÃO
+--------------------------------
+Este programa "corta" os arquivos PDF existentes em uma pasta, mantendo apenas a primeira página de cada um deles e substituindo os originais de forma rápida.
+
+⚠️ ATENÇÃO: O programa modifica os arquivos existentes diretamente (sobrescrevendo-os). Faça backup dos seus PDFs originais antes de executar!
+
+
+REQUISITOS
+--------------------------------
+1. Sistema Operacional: Windows.
+2. Nenhuma outra dependência é necessária.
+
+
+COMO USAR
+--------------------------------
+1. Através do Menu de Contexto:
+   - Clique com o botão direito do mouse no fundo de uma pasta contendo PDFs ou em cima da própria pasta, e selecione "Cortar PDF (Apenas 1ª pág)".
+   - Todos os arquivos PDF dentro daquela pasta serão processados.
+
+2. Através do Executável:
+   - Arraste uma pasta (ou arquivo PDF) para cima do executável `separar-pdf-pag1.exe`.
+   
+3. Através do Terminal:
+   - Execute o programa passando o caminho desejado como parâmetro:
+     separar-pdf-pag1.exe "C:\Caminho\Da\Pasta"
+
+
+SOLUÇÃO DE PROBLEMAS (TROUBLESHOOTING)
+--------------------------------
+- Certifique-se de que os PDFs não estejam abertos por outros leitores (como Adobe Acrobat ou Chrome) durante o processamento.
+- Garanta que possui permissões de escrita na pasta onde as alterações serão aplicadas.
+
+--------------------------------
+Autor: Rodrigo
+Atibaia/SP
