@@ -1,0 +1,13 @@
+Este programa cria ícones para serem usados em extensões do chrome/edge
+
+O arquivo de entrada deve ser uma foto quadrada PNG ou JPG/JPEG.
+O arquivo original será renomeado para Icon.png ou Icon.jpg/jpeg.
+
+O resultado será:
+
+Icon512.png
+Icon256.png
+Icon128.png
+Icon64.png
+Icon32.png
+Icon16.png

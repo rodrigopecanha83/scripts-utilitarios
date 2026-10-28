@@ -1,43 +1,39 @@
-================================
-RENOMEADOR DE FOTOS BASEADO NO DIRETÓRIO ATUAL
-================================
-Versão: 1.0
-Data: 3 de Agosto de 2026
+# Renomear Fotos Base Diretorio Atual
 
+Utilitário para renomear automaticamente todas as imagens de um diretório utilizando o próprio nome da pasta como prefixo sequencial.
 
-DESCRIÇÃO
---------------------------------
-Este é um programa utilitário para renomear automaticamente todas as imagens de uma pasta utilizando o nome da própria pasta como base (prefixo).
+## Funcionalidades Principais
 
-O programa foi projetado para facilitar a organização de álbuns de fotos e coleções de imagens de forma automática e rápida.
+* **Nomenclatura Baseada na Pasta:** Utiliza o nome do diretório pai como prefixo para os arquivos (ex: pasta `Viagem` gera `Viagem_1.jpg`, `Viagem_2.jpg`).
+* **Renomeação Sequencial Automática:** Identifica os arquivos de imagem suportados e aplica numeração ordenada.
+* **Integração com Menu de Contexto:** Arquivo `.reg` incluso para adicionar o comando diretamente ao botão direito no Windows Explorer.
 
+## Pré-requisitos
 
-REQUISITOS
---------------------------------
-1. Sistema Operacional: Windows.
-2. Nenhuma outra dependência é necessária.
+* Sistema Operacional: Windows.
+* Executável `Renomear-Fotos-Base-Diretorio-Atual.exe`.
+* Nenhuma outra biblioteca ou dependência externa necessária.
 
+## Como Instalar e Configurar
 
-COMO USAR
---------------------------------
-1. Copie o arquivo executável `Renomear-Fotos-Base-Diretorio-Atual.exe` para a pasta onde estão as fotos que deseja renomear.
-2. Dê um duplo clique no executável.
-3. O programa rodará no terminal, processará as imagens e renomeará os arquivos sequencialmente com base no nome do diretório (Ex: se a pasta se chamar `Viagem_Gramado`, as fotos serão renomeadas para `Viagem_Gramado_1.jpg`, `Viagem_Gramado_2.jpg`, etc.).
-4. Uma confirmação será exibida ao concluir.
+1. Clone ou baixe a pasta `Renomear-Fotos-Base-Diretorio-Atual`.
+2. Para adicionar ao menu de contexto do Windows Explorer (opcional):
+   - Mova a pasta com o executável e o ícone para `C:\MenuContexto\Renomear-Fotos-Base-Diretorio-Atual\`.
+   - Execute o arquivo `Renomear-Fotos-Base-Diretorio-Atual.reg` para registrar os atalhos.
 
+## Como Usar
 
-FUNCIONAMENTO INTERNO
---------------------------------
-- O programa obtém o nome da pasta em que está sendo executado.
-- Busca todos os arquivos de imagem (como `.jpg`, `.jpeg`, `.png`, etc.) no diretório.
-- Aplica uma nova nomenclatura padrão sequencial baseada no nome da pasta pai.
+Exemplo rápido de uso via linha de comando ou menu de contexto:
 
+```bash
+# Execução direta dentro da pasta com as fotos
+.\Renomear-Fotos-Base-Diretorio-Atual.exe
 
-SOLUÇÃO DE PROBLEMAS (TROUBLESHOOTING)
---------------------------------
-- O programa altera o nome dos arquivos originais diretamente. Recomenda-se fazer backup das fotos antes de rodar o programa caso queira preservar os nomes originais.
-- Certifique-se de que os arquivos de imagem não estão abertos por outros programas ou marcados como "somente leitura".
+# Ou passe o caminho da pasta como argumento
+.\Renomear-Fotos-Base-Diretorio-Atual.exe "C:\Caminho\Para\Fotos"
+```
 
---------------------------------
-Autor: Rodrigo
-Atibaia/SP
+Alternativamente, clique com o botão direito na pasta no Windows Explorer e selecione **Renomear Fotos Base Diretorio Atual**.
+
+## Desenvolvedor:
+Rodrigo Peçanha

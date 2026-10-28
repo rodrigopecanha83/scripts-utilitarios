@@ -1,0 +1,73 @@
+﻿# Diretrizes de Padronização para Arquivos .reg (Menu de Contexto Windows)
+
+Este documento estabelece as regras e padrões para a criação de arquivos de registro `.reg` para atalhos no menu de contexto do Windows Explorer em utilitários e scripts.
+
+---
+
+## 1. Regras de Estrutura e Permissões
+
+* **Chave Raiz:** Sempre utilizar `HKEY_CURRENT_USER\Software\Classes\` (não exige privilégios de Administrador).
+* **Cabeçalho Obrigatório:** Todo arquivo deve iniciar exatamente com `Windows Registry Editor Version 5.00`.
+* **Caminho Padrão de Instalação:** O diretório de instalação padrão dos utilitários deve ser `C:\MenuContexto\<nome-da-pasta>\`.
+
+---
+
+## 2. Entradas Duplas de Menu (Obrigatório)
+
+Todo arquivo `.reg` deve conter **duas seções de registro**:
+
+1. **Clique no fundo da pasta (Background):**
+   - Chave: `[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\<IdentificadorCamelCase>]`
+   - Parâmetro no comando: `"%V"` (passa o caminho da pasta atual aberta).
+
+2. **Clique em cima do ícone da pasta (Folder):**
+   - Chave: `[HKEY_CURRENT_USER\Software\Classes\Directory\shell\<IdentificadorCamelCase>]`
+   - Parâmetro no comando: `"%1"` (passa o caminho da pasta selecionada).
+
+---
+
+## 3. Ícones e Aspas de Execução
+
+* **Escape de Aspas:** O comando de execução deve ter as aspas duplas escapadas com barra invertida `\"` para tratar caminhos com espaços corretamente:
+  `@="\"C:\\MenuContexto\\<nome-da-pasta>\\<nome-do-executavel>.exe\" \"%V\""`
+* **Ícone (`"Icon"`):** 
+  - Se houver arquivo `.ico`, utilizar `"Icon"="C:\\MenuContexto\\<nome-da-pasta>\\Icon.ico"`.
+  - Caso contrário, apontar para o próprio executável: `"Icon"="C:\\MenuContexto\\<nome-da-pasta>\\<nome-do-executavel>.exe"`.
+
+---
+
+## 4. Modelo Padrão (Template `.reg`)
+
+Copie e substitua os valores entre `<>`:
+
+```registry
+Windows Registry Editor Version 5.00
+
+; Clique no fundo da pasta (Background)
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\<IdentificadorCamelCase>]
+@="<Nome de Exibição no Menu>"
+"Icon"="C:\\MenuContexto\\<nome-da-pasta>\\Icon.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\<IdentificadorCamelCase>\command]
+@="\"C:\\MenuContexto\\<nome-da-pasta>\\<nome-do-executavel>.exe\" \"%V\""
+
+; Clique em cima da pasta
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\<IdentificadorCamelCase>]
+@="<Nome de Exibição no Menu>"
+"Icon"="C:\\MenuContexto\\<nome-da-pasta>\\Icon.ico"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\<IdentificadorCamelCase>\command]
+@="\"C:\\MenuContexto\\<nome-da-pasta>\\<nome-do-executavel>.exe\" \"%1\""
+```
+
+---
+
+## 5. Convenção de Nomes de Arquivos
+
+* O arquivo `.reg` deve ter o mesmo nome base da pasta do projeto e do executável (ex: `meu-utilitario.reg`).
+* O identificador da chave no registro deve usar **CamelCase** e sem espaços (ex: `MeuUtilitario`).
+
+---
+
+## Desenvolvedor:
+Rodrigo Peçanha

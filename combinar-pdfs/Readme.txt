@@ -1,49 +1,44 @@
-================================
-JUNTADOR DE ARQUIVOS PDF
-================================
-Versão: 1.0
-Data: 21 de Agosto de 2025
+# Combinar PDFs
 
+Ferramenta de linha de comando para combinar múltiplos arquivos PDF em um único documento de forma automática, preservando a ordenação natural dos nomes dos arquivos.
 
-DESCRIÇÃO
---------------------------------
-Este é um programa utilitário para combinar múltiplos arquivos .pdf em um único documento de forma rápida.
+## Funcionalidades Principais
 
-O programa foi projetado para ser o mais simples possível: basta colocá-lo na pasta com os PDFs e executá-lo. Ele nomeia o arquivo final automaticamente com o nome da pasta.
+* **Junção Automática de PDFs:** Une todos os arquivos `.pdf` presentes na pasta em um único documento.
+* **Ordenação Natural:** Ordena os arquivos de forma inteligente (ex: `1.pdf`, `2.pdf`, `10.pdf`) antes da junção.
+* **Nomeação Dinâmica:** Nomeia o arquivo gerado automaticamente como `[nome-da-pasta]-combinado.pdf`.
+* **Integração com Menu de Contexto:** Arquivo `.reg` para atalho no clique com botão direito do mouse no Windows Explorer.
 
+## Pré-requisitos
 
-REQUISITOS
---------------------------------
-1. Sistema Operacional: Windows, macOS ou Linux.
-2. Nenhuma outra dependência ou software é necessário.
+* Go 1.20+ (caso vá compilar a partir do código-fonte `main.go`).
+* Dependência Go: `github.com/pdfcpu/pdfcpu`.
+* Executável pré-compilado `combinar-pdfs.exe` para execução direta no Windows.
 
+## Como Instalar e Configurar
 
-COMO USAR
---------------------------------
-1. Copie o arquivo executável `combinar-pdfs.exe` para a mesma pasta onde estão os seus arquivos .pdf.
-2. Dê um duplo clique no executável (no Windows) ou execute-o pelo terminal.
-3. O programa rodará e exibirá uma mensagem de sucesso no terminal ao concluir.
-4. Um novo arquivo chamado `[nome-da-pasta]-combinado.pdf` aparecerá na mesma pasta.
+1. Clone ou baixe a pasta `combinar-pdfs`.
+2. Para adicionar ao menu de contexto do Windows (opcional):
+   - Mova a pasta ou os arquivos `combinar-pdfs.exe` e `Icon.ico` para `C:\MenuContexto\combinar-pdfs\`.
+   - Execute o arquivo `combinar-pdfs.reg` para registrar o atalho no menu do botão direito do Windows Explorer.
+3. Para compilar manualmente (opcional):
+   ```bash
+   go build -o combinar-pdfs.exe main.go
+   ```
 
+## Como Usar
 
-FUNCIONAMENTO INTERNO
---------------------------------
-- O programa busca todos os arquivos com a extensão `.pdf` no diretório onde foi executado.
-- Ele ordena os arquivos encontrados usando "ordenação natural" para que `10.pdf` venha depois de `2.pdf`.
-- Para a junção dos arquivos, o programa utiliza a biblioteca `pdfcpu`, uma ferramenta robusta para manipulação de PDFs em Go.
-- Ao final do processo, uma mensagem de confirmação é exibida na tela.
+Exemplo rápido de uso via linha de comando ou menu de contexto:
 
+```bash
+# Execução direta na pasta dos PDFs
+.\combinar-pdfs.exe
 
-SOLUÇÃO DE PROBLEMAS (TROUBLESHOOTING)
---------------------------------
-- Em caso de sucesso, o programa exibirá a mensagem: `Arquivo '[nome-da-pasta]-combinado.pdf' criado com sucesso!`
+# Ou passe o caminho da pasta como argumento
+.\combinar-pdfs.exe "C:\Caminho\Para\Pasta"
+```
 
-- Se ocorrer qualquer erro durante a combinação, uma mensagem de erro será exibida diretamente na janela do terminal, e o programa será encerrado.
+Alternativamente, clique com o botão direito sobre a pasta ou dentro dela no Windows Explorer e selecione **Combinar PDFs**.
 
-- Causas comuns de erro:
-  - Um dos arquivos PDF de origem está corrompido ou protegido por senha.
-  - O programa não possui permissão para escrever arquivos na pasta atual.
-
---------------------------------
-Autor: Rodrigo
-Atibaia/SP
+## Desenvolvedor:
+Rodrigo Peçanha

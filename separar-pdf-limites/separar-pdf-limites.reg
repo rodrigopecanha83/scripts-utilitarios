@@ -3,7 +3,7 @@ Windows Registry Editor Version 5.00
 ; Clique no fundo da pasta (Background)
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Cortar PDF (1ª e última)]
 @="Cortar PDF (1ª e última)"
-"Icon"="C:\\MenuContexto\\separar-pdf-limites\\icon.ico"
+"Icon"="C:\\MenuContexto\\separar-pdf-limites\\Icon.ico"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Cortar PDF (1ª e última)\command]
 @="\"C:\\MenuContexto\\separar-pdf-limites\\separar-pdf-limites.exe\" \"%V\""
