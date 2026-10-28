@@ -1,4 +1,4 @@
-# Scripts Utilitários — Central de Automação
+﻿# Scripts Utilitários — Central de Automação
 
 Repositório central de ferramentas e scripts utilitários desenvolvidos para automação de tarefas, processamento de imagens em lote, manipulação de documentos PDF e atalhos de produtividade para o Windows Explorer.
 
@@ -43,8 +43,9 @@ Sugestões e correções são bem-vindas. Abra uma Issue ou envie um Pull Reques
 
 ## Licença
 
-TODO: definir licença. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto é distribuído sob os termos da licença **GNU General Public License v3.0 (GNU GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
 
 Rodrigo Peçanha
+

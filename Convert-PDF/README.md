@@ -1,4 +1,4 @@
-# Convert-PDF
+﻿# Convert-PDF
 
 Utilitário em Python para converter arquivos de imagem em documentos PDF individuais de forma automatizada, organizando os arquivos originais em pasta de backup.
 
@@ -48,8 +48,9 @@ Sugestões e correções são bem-vindas. Abra uma Issue ou envie um Pull Reques
 
 ## Licença
 
-TODO: definir licença. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto é distribuído sob os termos da licença **GNU General Public License v3.0 (GNU GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
 
 Rodrigo Peçanha
+

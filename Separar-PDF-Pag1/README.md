@@ -1,4 +1,4 @@
-# Separar-PDF-Pag1
+﻿# Separar-PDF-Pag1
 
 Utilitário de linha de comando para recortar arquivos PDF em lote mantendo exclusivamente a primeira página de cada documento.
 
@@ -41,8 +41,9 @@ Sugestões e correções são bem-vindas. Abra uma Issue ou envie um Pull Reques
 
 ## Licença
 
-TODO: definir licença. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto é distribuído sob os termos da licença **GNU General Public License v3.0 (GNU GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
 
 Rodrigo Peçanha
+

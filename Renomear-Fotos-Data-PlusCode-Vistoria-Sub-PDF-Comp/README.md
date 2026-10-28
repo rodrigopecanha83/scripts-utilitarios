@@ -1,4 +1,4 @@
-# Renomear-Fotos-Data-PlusCode-Vistoria-Sub-PDF-Comp
+﻿# Renomear-Fotos-Data-PlusCode-Vistoria-Sub-PDF-Comp
 
 Ferramenta concorrente em Go para renomeação de imagens por EXIF/PlusCode e compilação de relatórios de vistoria em PDF processados em memória RAM.
 
@@ -44,8 +44,9 @@ Sugestões e correções são bem-vindas. Abra uma Issue ou envie um Pull Reques
 
 ## Licença
 
-TODO: definir licença. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto é distribuído sob os termos da licença **GNU General Public License v3.0 (GNU GPLv3)**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Autor
 
 Rodrigo Peçanha
+
