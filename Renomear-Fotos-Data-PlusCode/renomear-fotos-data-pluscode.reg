@@ -3,15 +3,15 @@ Windows Registry Editor Version 5.00
 ; Clique no fundo da pasta (Background)
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\RenomearFotosDataPlusCode]
 @="Renomear Fotos Data e Plus Code"
-"Icon"="C:\\MenuContexto\\renomear-fotos-data-pluscode\\renomear-fotos-data-pluscode.exe"
+"Icon"="C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode\\renomear-fotos-data-pluscode.exe"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\RenomearFotosDataPlusCode\command]
-@="\"C:\\MenuContexto\\renomear-fotos-data-pluscode\\renomear-fotos-data-pluscode.exe\" \"%V\""
+@="\"C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode\\renomear-fotos-data-pluscode.exe\" \"%V\""
 
 ; Clique em cima da pasta
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\RenomearFotosDataPlusCode]
 @="Renomear Fotos Data e Plus Code"
-"Icon"="C:\\MenuContexto\\renomear-fotos-data-pluscode\\renomear-fotos-data-pluscode.exe"
+"Icon"="C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode\\renomear-fotos-data-pluscode.exe"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\RenomearFotosDataPlusCode\command]
-@="\"C:\\MenuContexto\\renomear-fotos-data-pluscode\\renomear-fotos-data-pluscode.exe\" \"%1\""
+@="\"C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode\\renomear-fotos-data-pluscode.exe\" \"%1\""

@@ -3,15 +3,15 @@ Windows Registry Editor Version 5.00
 ; Clique no fundo da pasta (Background)
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\SepararPDFPag1]
 @="Cortar PDF (Apenas 1ª pág)"
-"Icon"="C:\\MenuContexto\\separar-pdf-pag1\\icon.ico"
+"Icon"="C:\\MenuContexto\\Separar-PDF-Pag1\\icon.ico"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\SepararPDFPag1\command]
-@="\"C:\\MenuContexto\\separar-pdf-pag1\\separar-pdf-pag1.exe\" \"%V\""
+@="\"C:\\MenuContexto\\Separar-PDF-Pag1\\separar-pdf-pag1.exe\" \"%V\""
 
 ; Clique em cima da pasta
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\SepararPDFPag1]
 @="Cortar PDF (Apenas 1ª pág)"
-"Icon"="C:\\MenuContexto\\separar-pdf-pag1\\icon.ico"
+"Icon"="C:\\MenuContexto\\Separar-PDF-Pag1\\icon.ico"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\SepararPDFPag1\command]
-@="\"C:\\MenuContexto\\separar-pdf-pag1\\separar-pdf-pag1.exe\" \"%1\""
+@="\"C:\\MenuContexto\\Separar-PDF-Pag1\\separar-pdf-pag1.exe\" \"%1\""

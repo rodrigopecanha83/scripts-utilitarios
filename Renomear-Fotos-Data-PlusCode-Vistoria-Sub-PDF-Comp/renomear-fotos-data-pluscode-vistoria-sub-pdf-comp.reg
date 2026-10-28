@@ -1,17 +1,17 @@
-﻿Windows Registry Editor Version 5.00
+Windows Registry Editor Version 5.00
 
 ; Clique no fundo da pasta (Background)
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\RenomearFotosDataPlusCodeVistoriaSubPdfComp]
 @="Renomear Fotos Data PlusCode Vistoria Subpastas PDF"
-"Icon"="C:\\MenuContexto\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe"
+"Icon"="C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode-Vistoria-Sub-PDF-Comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\RenomearFotosDataPlusCodeVistoriaSubPdfComp\command]
-@="\"C:\\MenuContexto\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe\" \"%V\""
+@="\"C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode-Vistoria-Sub-PDF-Comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe\" \"%V\""
 
 ; Clique em cima da pasta
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\RenomearFotosDataPlusCodeVistoriaSubPdfComp]
 @="Renomear Fotos Data PlusCode Vistoria Subpastas PDF"
-"Icon"="C:\\MenuContexto\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe"
+"Icon"="C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode-Vistoria-Sub-PDF-Comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe"
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\shell\RenomearFotosDataPlusCodeVistoriaSubPdfComp\command]
-@="\"C:\\MenuContexto\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe\" \"%1\""
+@="\"C:\\MenuContexto\\Renomear-Fotos-Data-PlusCode-Vistoria-Sub-PDF-Comp\\renomear-fotos-data-pluscode-vistoria-sub-pdf-comp.exe\" \"%1\""
